@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Réservation - Restaurant Le Saint Étienne</title>
+    <meta name="description"
+        content="Réservez votre table au Restaurant Le Saint Étienne pour une expérience gastronomique inoubliable. Découvrez notre menu exquis, nos vins raffinés et notre ambiance chaleureuse." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="container-global-flex">
+        <a href="index.html">
+            <img class="logo" src="img/logo.png" alt="Logo - Le Saint Étienne" width="200">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="nav-link-active"><a href="reservation.html">Reservation</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li class="special"><a href="ma-commande.html">Ma commande</a></li>
+            </ul>
+        </nav>
+        <div class="menu-mobile">&#9776;</div>
+    </header>
+    <main class="form-area">
+        <div class="page-title">
+            <h2>Réservation</h2>
+        </div>
+        <div class="main-form">
+            <form action="confirmation.html" method="POST">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre_personnes">Nombre de personnes :</label>
+                    <input type="number" id="nombre_personnes" name="nombre_personnes" required>
+                </div>
+                <div class="form-group">
+                    <label for="date_reservation">Date de la réservation :</label>
+                    <input type="date" id="date_reservation" name="date_reservation" lang="fr" required>
+                </div>
+                <div class="form-group">
+                    <label>Choix du lieu de réservation :</label>
+                    <div class="radio-group">
+                        <input type="radio" id="salle_manger" name="lieu_reservation" value="Dining room" required>
+                        <label for="salle_manger">Salle à manger</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="terrasse" name="lieu_reservation" value="Terrace" required>
+                        <label for="terrasse">Terrasse</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="heure_reservation">Heure de la réservation :</label>
+                    <select id="heure_reservation" name="heure_reservation" required>
+                        <option value="" disabled selected hidden>Choisissez une heure</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="commentaire">Commentaire :</label>
+                    <textarea id="commentaire" name="commentaire"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="email">Courrier électronique :</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter" class="checkbox-label">S'abonner à la newsletter</label>
+                </div>
+                <button type="submit">Valider la réservation</button>
+            </form>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer flex-cotes">
+            <div class="left-text-up">
+                <a>
+                    <img src="img/mail.svg" alt="Email logo">
+                </a>
+                Réalisé par: Antonio Galeano
+            </div>
+            <div class="right-text-up">Réseaux sociaux:
+                <a href="#">
+                    <img src="img/facebook.svg" alt="Facebook logo">
+                </a>
+                <a href="#">
+                    <img src="img/linkedin.svg" alt="LinkedIn logo">
+                </a>
+                <a href="#">
+                    <img src="img/twitter.svg" alt="Twitter logo">
+                </a>
+                <a href="#">
+                    <img src="img/instagram.svg" alt="Instagram logo">
+                </a>
+            </div>
+        </div>
+        <div class="horizontal-line">&nbsp;</div>
+        <div class="container-footer flex-cotes">
+            <div class="left-text-down">Intégration web 1</div>
+            <div class="right-text-down">
+                <span class="underline-text">Cégep de Trois-Rivières</span>
+                &nbsp;&nbsp;
+                <span class="underline-text">Hiver 2023</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

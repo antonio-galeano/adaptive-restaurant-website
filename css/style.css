@@ -1,0 +1,896 @@
+/* --------------------------------------------------------
+Template Name: Bistro Charm – Restaurant Le Saint Étienne CSS Styles
+Template URI: https://github.com/antonio-galeano/adaptive-restaurant-website
+Description: Custom CSS styles for the Restaurant Le Saint Étienne website.
+Author: Antonio Galeano
+Author URI: https://galeano.dev
+Version: 1.0
+-----------------------------------------------------------
+Table of Contents
+===========================================================
+   1. Reset Styles
+   2. Body Styles
+   3. Header (h) values Styles
+   4. Paragraph and Attribute Styles
+   5. Global Container Styles
+   6. Header Styles
+   7. Page Titles Style
+   8. Index Page Styles - Upper section
+   9. Index Page - Testimonial section Styles
+  10. Reservation Page Styles
+  11. Restaurant Page Styles - Upper section
+  12. Restaurant Page Styles - Lower section
+  13. Ma Commande Page Styles
+  14. Confirmation Page Styles
+  15. Footer Styles
+  16. Fonts
+-------------------------------------------------------- */
+
+
+/* 1. Reset Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 2. Body Styles */
+body {
+	font-family: 'Open Sans', serif;
+	color: #777;
+	font-weight: 400;
+	/*To have a header at the top, and a footer at the bottom, while filling the height of the viewport*/
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/* 3. Header (h) values Styles */
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Raleway', sans-serif;
+}
+
+
+h4 {
+	font-size: 24px;
+	/*text-transform: uppercase;*/
+	font-weight: 400;
+	color: #333;
+}
+
+/* 4. Paragraph and Attribute Styles */
+p {
+	font-size: 15px;
+}
+
+
+a {
+	color: #468885;
+	text-decoration: none;
+	font-weight: 700;
+
+
+}
+
+a:hover,
+a:focus {
+
+	color: #222;
+}
+
+/* 5. Global Container Styles */
+.container-global-flex {
+	flex: 1;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0;
+}
+
+
+/* 6. Header Styles */
+.logo {
+	max-width: 100px;
+}
+
+
+nav {
+	display: flex;
+}
+
+nav ul {
+	list-style-type: none;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li a {
+	margin-right: 20px;
+}
+
+nav ul li.special a {
+	padding: 10px 20px;
+	background-color: #fff;
+	border: none;
+	box-shadow: 0 4px 8px #00000033;
+	transition: box-shadow 0.3s ease;
+}
+
+.nav-link-active a {
+	color: #484241;
+}
+
+
+.menu-mobile {
+	display: none;
+	padding: 0 5px;
+}
+
+
+header {
+	width: 100%;
+	color: #333;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.logo {
+		max-width: 150px;
+	}
+}
+
+
+@media screen and (max-width: 960px) {
+	.logo {
+		max-width: 100px;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.menu-mobile {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.logo {
+		max-width: 50px;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+/* 7. Page Titles Style */
+.page-title {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 40px;
+
+}
+
+.page-title h2 {
+	text-align: left;
+	margin-left: 5px;
+}
+
+
+/* 8. Index Page Styles - Upper section */
+.container-index {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0;
+}
+
+
+.intro h1 {
+	font-family: 'Raleway';
+	color: #468885;
+	font-size: 2.5em;
+	font-weight: 800;
+}
+
+.intro p {
+	color: #777;
+	font-size: 1.4em;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.btn-custom {
+	text-transform: uppercase;
+	color: #fff;
+	border: 2px solid #444;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.5px;
+	border-radius: 0;
+	margin-top: 20px;
+	transition: all 0.3s;
+	max-width: 200px;
+}
+
+.btn-custom-1 {
+	background-color: #777;
+	margin-right: 2px;
+}
+
+.btn-custom-2 {
+	color: #777;
+	background-color: transparent;
+	margin-left: 2px;
+}
+
+.with-underline {
+	text-decoration: underline;
+}
+
+.without-underline {
+	text-decoration: none;
+}
+
+
+.left-side {
+	width: 30%;
+	padding-left: 5px;
+}
+
+.right-side {
+	width: 70%;
+	padding-right: 5px;
+}
+
+.index-image img {
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 1200px) {
+	.container-index {
+		padding: 10px;
+	}
+}
+
+@media (max-width: 1005px) {
+	.buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.intro h1,
+	.intro p {
+		text-align: center;
+	}
+
+	.btn-custom {
+		margin: 1px auto 10px auto;
+	}
+}
+
+@media (max-width: 960px) {
+	.container-index {
+		flex-direction: column;
+	}
+
+	.left-side,
+	.right-side {
+		width: 100%;
+		text-align: center;
+	}
+
+	.buttons {
+		justify-content: center;
+	}
+
+	.btn-custom {
+		margin: 1px auto 10px auto;
+	}
+}
+
+/* 9. Index Page - Testimonial section Styles */
+#sec-testimonials {
+	max-width: 1200px;
+	margin-top: 80px;
+
+}
+
+.testimonials-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.testimonials-intro {
+	flex-direction: column;
+	padding-left: 5px;
+}
+
+.testimonials-intro h2 {
+	font-size: 2rem;
+	margin: 0;
+	text-align: left;
+	font-family: 'Raleway';
+	font-weight: 700;
+	color: #468885;
+}
+
+.testimonials-intro .subtitle {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 30px;
+	text-align: left;
+	color: rgb(119, 119, 119);
+	margin-top: 10px;
+
+}
+
+.testimonial-individual {
+	width: 31.5%;
+	margin: 10px;
+	padding: 20px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+	background-color: #ebebeb;
+	border-radius: 10px;
+}
+
+.client-info {
+	display: flex;
+	align-items: center;
+}
+
+.client-info img {
+	width: 100px;
+	height: auto;
+	margin-right: 10px;
+}
+
+.client-info .client-name {
+	font-size: 18px;
+	font-weight: 800;
+	margin-bottom: 5px;
+}
+
+.testimonial-individual img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.review {
+	font-size: 0.9rem;
+	line-height: 24px;
+}
+
+
+@media (max-width: 1200px) {
+	.testimonial-individual {
+		width: 41.5%;
+	}
+}
+
+@media (max-width: 960px) {
+	.testimonial-individual {
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 570px) {
+	.testimonials-container {
+		flex-direction: column;
+		margin-right: 20px;
+	}
+}
+
+/* 10. Reservation Page Styles */
+.form-area {
+	padding: 20px;
+}
+
+.main-form {
+	max-width: 1200px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-group {
+	flex: 1 1 50%;
+	margin-bottom: 20px;
+	padding: 2px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+textarea {
+	height: 100px;
+}
+
+button {
+	background-color: #333;
+	border: none;
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2rem;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 0;
+	max-width: 240px;
+}
+
+button:hover {
+	background-color: #555;
+}
+
+button:active {
+	background-color: #222;
+}
+
+
+.radio-group {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.radio-group input[type="radio"] {
+	margin-right: 5px;
+}
+
+.checkbox-label {
+	display: inline-flex;
+	align-items: center;
+}
+
+@media (max-width: 960px) {
+	form {
+		flex-direction: column;
+	}
+
+	.form-group {
+		width: 100%;
+	}
+}
+
+
+/* 11. Restaurant Page Styles - Upper section */
+.main-content {
+	margin: 0;
+}
+
+#sec-main-images {
+	padding-bottom: 20px;
+}
+
+
+.restaurant-gallery {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: space-between;
+	gap: 0px;
+}
+
+.restaurant-gallery>* {
+	align-self: center;
+}
+
+
+.item-l {
+	padding: 2px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.item-r {
+	padding: 2px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.sub-item {
+	display: inline-block;
+	margin-right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+}
+
+
+.item-image-small {
+	margin: 10px;
+	background-color: #f0f0f0;
+}
+
+.item-image {
+	background-color: #f0f0f0;
+	margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+	.item-image-small {
+		width: 94%;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.restaurant-gallery {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.item-image-small,
+	.item-image {
+		width: 80%;
+	}
+}
+
+
+@media screen and (max-width: 570px) {
+
+	.item-image-small,
+	.item-image {
+		width: 90%;
+	}
+}
+
+
+/* 12. Restaurant Page Styles - Lower section */
+
+#restaurant-location {
+	width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.left-section,
+.right-section {
+	width: 48%;
+}
+
+.left-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.text-section {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+	#restaurant-location {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	#restaurant-location {
+		width: 82%;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	#restaurant-location {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.left-section,
+	.right-section {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	iframe {
+		width: 100%;
+	}
+
+	.text-section {
+		text-align: center;
+	}
+}
+
+
+/* 13. Ma Commande Page Styles */
+.container-ma-commande {
+	max-width: 1200px;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+#sec-dishes {
+	margin: 0;
+}
+
+table {
+	width: calc(50% - 20px);
+	margin-bottom: 20px;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding-top: 10px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	text-align: left;
+	border: none;
+	white-space: nowrap;
+
+}
+
+
+.horizontal-line-table td {
+	border: none;
+	padding: 0;
+	position: relative;
+}
+
+.horizontal-line-table td::after {
+	content: "";
+	position: absolute;
+	left: 10%;
+	bottom: 0;
+	width: 80%;
+	border-top: 1px solid black;
+
+}
+
+
+.box-shadow {
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+#sec-summary-table {
+	margin: 0 auto;
+}
+
+
+.light-gray-bg {
+	background-color: #ececec;
+}
+
+.left-radius {
+	border-radius: 10px 0 0 10px;
+}
+
+caption {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 30px;
+	text-align: left;
+	color: rgb(119, 119, 119);
+}
+
+.details {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 30px;
+	text-align: left;
+	color: rgb(119, 119, 119);
+}
+
+.order-button {
+	background-color: #333;
+	border: none;
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2rem;
+	display: inline-block;
+	margin: 4px 2px 30px;
+	cursor: pointer;
+
+}
+
+.order-button:hover {
+	background-color: #555;
+}
+
+.order-button:active {
+	background-color: #222;
+}
+
+
+.table-horizontal-line {
+	width: 100%;
+	height: 1px;
+	background-color: #333;
+	margin: 0 auto;
+}
+
+
+@media (max-width: 1200px) {
+	.container-ma-commande {
+		flex-direction: column;
+	}
+
+	table {
+		width: calc(100% - 20px);
+	}
+}
+
+@media (max-width: 570px) {
+	table {
+		width: calc(60% - 20px);
+	}
+}
+
+@media (max-width: 520px) {
+
+	th,
+	td {
+		padding: 10px;
+	}
+}
+
+
+/* 14. Confirmation Page Styles */
+.confirmation-message {
+	flex: 1;
+	height: 62vh;
+	justify-content: center;
+}
+
+
+/* 15. Footer Styles */
+.container-footer {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.flex-cotes {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left-text-up,
+.left-text-down,
+.right-text-up,
+.right-text-down {
+	flex-basis: 50%;
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.left-text-up {
+	text-align: left;
+	color: #222;
+}
+
+.right-text-up {
+	text-align: right;
+	color: #222;
+}
+
+.left-text-down {
+	text-align: left;
+	text-decoration: underline;
+}
+
+.right-text-down {
+	text-align: right;
+
+}
+
+.underline-text {
+	text-decoration: underline;
+}
+
+
+.horizontal-line {
+	max-width: 1200px;
+	height: 2px;
+	background-color: #333;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 960px) {
+	.flex-cotes {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.left-text,
+	.right-text {
+		text-align: center;
+		margin-bottom: 5px;
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+
+	.horizontal-line {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+
+/* 16. Fonts */
+
+@font-face {
+	font-family: "OpenSans";
+	src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url('fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
